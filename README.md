@@ -13,7 +13,7 @@ An R package that creates colourblind friendly themes.
 
 **Scope**
 
-At this stage, `Colourblind8` will focus on developing settings for the three most prevalent colourblind perspectives - protanopia, deuteranopes and tritanopes (see Appendix for more information on the types of colourblindness).
+At this stage, `ColourblindR` will focus on developing settings for the three most prevalent colourblind perspectives - protanopia, deuteranopes and tritanopes (see Appendix for more information on the types of colourblindness).
 
 ### Functions Included In This Package
 
