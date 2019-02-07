@@ -1,6 +1,6 @@
 # ColourblindR
 
-![](/img/CBRnew.png =50x20)
+<img src="/img/CBRnew.png" width="200">
 
 An R package that creates colourblind friendly themes.
 
