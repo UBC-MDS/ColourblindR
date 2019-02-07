@@ -1,5 +1,7 @@
 # ColourblindR
 
+![](/img/CBRnew.png)
+
 An R package that creates colourblind friendly themes.
 
 ### Authors
