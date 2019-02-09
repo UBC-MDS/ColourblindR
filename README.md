@@ -1,4 +1,5 @@
-<img src="/img/CBRnew.png" width="200" align = "right>
+
+<img src="/img/CBRnew.png" width="200" align='right'>
 
 # ColourblindR
 
