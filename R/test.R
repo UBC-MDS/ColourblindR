@@ -1,7 +1,10 @@
-#packages required for testing theme application in ColourblindR
+# packages required for testing theme application in ColourblindR
 
 library(ggplot2)
 library(testthat)
+
+# The following tests work for all three themes as these tests are scanning through the elements within the themes
+# but the framework of three themes remain the same.
 
 # Test if theme is being applied
 
