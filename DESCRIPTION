@@ -1,0 +1,20 @@
+Package: ColourblindR
+Title: Package That Creates Themes That Make Plots Accessible For People With Colour Blindness.
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Ian",
+           family = "Flores Siaca",
+           role = c("aut", "cre"),
+           email = "iflores.siaca@gmail.com")
+    person(given = "Sabrina K.",
+            family = "Tse",
+            role = c("aut", "cre"),
+            email = "sabrinatkk@gmail.com")
+    person(given = "Hayley",
+            family = "Boyce",
+            role = c("aut", "cre"),
+            email = "hayleyfboyce@gmail.com")
+Description: Package That Creates Themes That Make Plots Accessible For People With Colour Blindness.
+License: What license it uses
+Encoding: UTF-8
+LazyData: true
