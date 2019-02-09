@@ -1,6 +1,6 @@
-# ColourblindR
+<img src="/img/CBRnew.png" width="200" align = "right>
 
-<img src="/img/CBRnew.png" width="200">
+# ColourblindR
 
 An R package that creates colourblind friendly themes.
 
