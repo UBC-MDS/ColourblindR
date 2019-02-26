@@ -30,13 +30,16 @@ At this stage, `ColourblindR` will focus on developing settings for the three mo
   
 ### Installation
 
-To install `ColourblindR` via pip, please input the following into the Terminal:
+To start using ColourblindR, the installation guidelines are as followed: 
 
-`pip install git+https://github.com/UBC-MDS/ColourblindR.git`
+1. Ensure devtools is installed. If not, open the console and input the following: 
+```install.packages("devtools")``` to install devtools from CRAN.
 
-To upgrade to the latest version, use:
+2. Install ColourblindR by inputting the following into the console:
+```devtools::install_github("UBC-MDS/ColourblindR")```
 
-`pip install -- upgrade git+https://github.com/UBC-MDS/ColourblindR.git`
+### Usage
+
 
 ### Our Package in the R Ecosystem 
 
