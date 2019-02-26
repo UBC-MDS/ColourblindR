@@ -26,6 +26,17 @@ At this stage, `ColourblindR` will focus on developing settings for the three mo
   - This function implements a theme that makes plots accesible to people with protanopia. It modifies the colour of geometric objects (points, lines, etc) and the layout of the plot.
 - `theme_trita()`
   - This function implements a theme that makes plots accesible to people with tritanopia. It modifies the colour of geometric objects (points, lines, etc) and the layout of the plot.
+  
+  
+### Installation
+
+To install `ColourblindR` via pip, please input the following into the Terminal:
+
+`pip install git+https://github.com/UBC-MDS/ColourblindR.git`
+
+To upgrade to the latest version, use:
+
+`pip install -- upgrade git+https://github.com/UBC-MDS/ColourblindR.git`
 
 ### Our Package in the R Ecosystem 
 
