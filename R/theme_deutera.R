@@ -2,8 +2,7 @@
 #'
 #' This function implements a theme that makes plots more intepretable for viewers with deuteranopia.
 #' It modifies the colour of geometric objects (points, lines, etc) and the layout of the plot.
-#'
-source("R/theme_base.R")
+
 
 theme_deutera <- function(colour_type){
    #' @param colour_type either fill colour of colour depending on the geom of choice
@@ -12,7 +11,7 @@ theme_deutera <- function(colour_type){
    #' both colour and fill aesthetics.
    #' Use it in conjuction with ggplot2
    #'
-   #' @usage: ggplot(data, aes(variable x, variable y)) + geom_point() + theme_deutera()
+   #' @usage: ggplot(data, aes(variable x, variable y, colour = class)) + geom_point() + theme_deutera('colour')
    #'
    #' @details: Create your plot via ggplot2 and apply our theme to enhance plots to be more readable for colourblind viewers
    #' @export
@@ -28,7 +27,7 @@ theme_deutera <- function(colour_type){
    #' cowplot::plot_grid(p, p +  theme_deutera(colour_type = 'colour'))
    #'
    #' @return reformatted plot for deuteranopia vision
-    
+
    theme_set(theme_base())
 
    cb_palette <- c('#666E95', '#FFC13D', '#2F86E5',
