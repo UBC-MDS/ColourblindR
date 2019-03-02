@@ -1,4 +1,14 @@
+#' ColourblindR script for theme_base (Internal function)
+#'
+#' This function implements a base theme that makes plots more intepretable for viewers in general
+#' It modifies the layout of the plot.
+#'
+
 theme_base <- function(colour_type){
+
+    #' @description: theme_base()
+    #'
+    #' @details: Create your plot via ggplot2 and apply our theme to enhance plots to be more readable for colourblind viewers
 
    theme_bw() +
        theme(text = element_text(family = "sans", color = "black",

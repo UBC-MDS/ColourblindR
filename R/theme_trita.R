@@ -4,31 +4,29 @@
 #' It modifies the colour of geometric objects (points, lines, etc) and the layout of the plot.
 #'
 
-source("R/theme_base.R")
-
 theme_trita <-function(colour_type){
-#' @param colour_type either fill colour of colour depending on the geom of choice
-   #'
-   #' @description: theme_deutera() creates a theme with a Deuteranopia friendly colour palette that can be used on
-   #' both colour and fill aesthetics.
-   #' Use it in conjuction with ggplot2
-   #'
-   #' @usage: ggplot(data, aes(variable x, variable y)) + geom_point() + theme_deutera()
-   #'
-   #' @details: Create your plot via ggplot2 and apply our theme to enhance plots to be more readable for colourblind viewers
-   #' @export
-   #' @examples:
-   #'
-   #' p <- ggplot(mpg, aes(x = hwy, y = cty, fill = as.factor(cyl))) +geom_bar(stat = 'identity')
-   #' cowplot::plot_grid(p, p + theme_deutera(colour_type = 'fill'))
-   #'
-   #' p <- ggplot(mpg, aes(x = hwy, y = cty, colour = as.factor(cyl))) + geom_point(stat = 'identity')
-   #' cowplot::plot_grid(p, p +  theme_deutera(colour_type = 'colour'))
-   #'
-   #' ggplot(mpg, aes(hwy, colour = as.factor(cyl))) + geom_density()
-   #' cowplot::plot_grid(p, p +  theme_deutera(colour_type = 'colour'))
-   #'
-   #' @return reformatted plot for deuteranopia vision
+    #' @param colour_type either fill colour of colour depending on the geom of choice
+    #'
+    #' @description: theme_deutera() creates a theme with a Tritanopia friendly colour palette that can be used on
+    #' both colour and fill aesthetics.
+    #' Use it in conjuction with ggplot2
+    #'
+    #' @usage: ggplot(data, aes(variable x, variable y, colour = class)) + geom_point() + theme_trita('colour')
+    #'
+    #' @details: Create your plot via ggplot2 and apply our theme to enhance plots to be more readable for colourblind viewers
+    #' @export
+    #' @examples:
+    #'
+    #' p <- ggplot(mpg, aes(x = hwy, y = cty, fill = as.factor(cyl))) +geom_bar(stat = 'identity')
+    #' cowplot::plot_grid(p, p + theme_trita(colour_type = 'fill'))
+    #'
+    #' p <- ggplot(mpg, aes(x = hwy, y = cty, colour = as.factor(cyl))) + geom_point(stat = 'identity')
+    #' cowplot::plot_grid(p, p +  theme_trita(colour_type = 'colour'))
+    #'
+    #' ggplot(mpg, aes(hwy, colour = as.factor(cyl))) + geom_density()
+    #' cowplot::plot_grid(p, p +  theme_trita(colour_type = 'colour'))
+    #'
+    #' @return reformatted plot for protanopia vision
 
    theme_set(theme_base())
 
