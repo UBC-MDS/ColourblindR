@@ -9,7 +9,7 @@ library(testthat)
 #' Test if theme is being applied
 
 test_plot<- ggplot(diamonds, aes(x = depth, y = price, colour = cut)) +
-    geom_point(alpha = 0.5) + theme_bw()
+    geom_point(alpha = 0.5) + theme_deutera()
 
 #' access to the layers and elements within the plot
 
