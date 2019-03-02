@@ -1,5 +1,6 @@
 theme_base <- function(colour_type){
 
+
    theme_bw() +
        theme(text = element_text(family = "sans", color = "black",
                                  face = "plain", size = 16,

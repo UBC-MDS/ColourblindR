@@ -7,6 +7,7 @@
 source("R/theme_base.R")
 
 theme_trita <-function(colour_type){
+
 #' @param colour_type either fill colour of colour depending on the geom of choice
    #'
    #' @description: theme_deutera() creates a theme with a Deuteranopia friendly colour palette that can be used on
@@ -43,3 +44,4 @@ theme_trita <-function(colour_type){
             For more information look at the documentation with ?theme_*.')
    }
 }
+

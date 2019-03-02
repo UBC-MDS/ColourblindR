@@ -6,7 +6,7 @@
 source("R/theme_base.R")
 
 theme_deutera <- function(colour_type){
-    #' @param colour_type either fill colour of colour depending on the geom of choice
+   #' @param colour_type either fill colour of colour depending on the geom of choice
    #'
    #' @description: theme_deutera() creates a theme with a Deuteranopia friendly colour palette that can be used on
    #' both colour and fill aesthetics.
@@ -46,3 +46,4 @@ theme_deutera <- function(colour_type){
    }
 
 }
+
