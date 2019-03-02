@@ -3,6 +3,7 @@
 #' This function implements a theme that makes plots more intepretable for viewers with deuteranopia.
 #' It modifies the colour of geometric objects (points, lines, etc) and the layout of the plot.
 #'
+source("R/theme_base.R")
 
 theme_deutera <- function(colour_type){
     #' @param colour_type either fill colour of colour depending on the geom of choice
