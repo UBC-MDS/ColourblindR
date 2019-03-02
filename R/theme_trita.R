@@ -41,3 +41,4 @@ theme_trita <-function(colour_type){
             For more information look at the documentation with ?theme_*.')
    }
 }
+
