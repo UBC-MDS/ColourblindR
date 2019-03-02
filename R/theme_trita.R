@@ -40,3 +40,4 @@ theme_trita <-function(colour_type){
        stop('colour_type expects either fill, colour or color.
             For more information look at the documentation with ?theme_*.')
    }
+}
