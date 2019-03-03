@@ -32,7 +32,7 @@ At this stage, `ColourblindR` will focus on developing settings for the three mo
 
 To start using ColourblindR, the installation guidelines are as followed:
 
-1. Ensure devtools is installed. If not, open the console and input the following: 
+1. Ensure devtools is installed. If not, open the console and input the following:     
 	```install.packages("devtools")``` to install devtools from CRAN.
 
 2. Load `devtools`  by inputting the following in the console:
