@@ -1,5 +1,5 @@
 Package: ColourblindR
-Title: Package That Creates Themes That Make Plots Accessible For People With Colour Blindness.
+Title: Package That Creates Themes That Make Plots Accessible For People With Colour Blindness
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Ian",
@@ -14,11 +14,10 @@ Authors@R:
             family = "Boyce",
             role = c("aut", "cre"),
             email = "hayleyfboyce@gmail.com")
-Description: Package That Creates Themes That Make Plots Accessible For People With Colour Blindness.
+Description: Package That Creates Themes That Make Plots Accessible For People With Colour Blindness
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
 Imports: 
     ggplot2
-    
