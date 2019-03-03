@@ -36,9 +36,90 @@ To start using ColourblindR, the installation guidelines are as followed:
 ```install.packages("devtools")``` to install devtools from CRAN.
 
 2. Install ColourblindR by inputting the following into the console:
-```devtools::install_github("UBC-MDS/ColourblindR")```
+```devtools::install_github('ubc-mds/colourblindr')```
+
+
 
 ### Usage
+
+For all functions it is necessary to import both ColourblindR and ggplot2
+
+```
+library(ColourblindR)
+library(ggplot2)
+```
+
+##### `theme_deutera(colour_type)`
+
+Input: 
+
+`colour_type`: either "fill" or "colour" or "color" (both colour/color do the same thing)
+
+Output: A visualization with a  deuteranopia friendly colour palette and theme.
+
+examples: 
+
+```
+ggplot(data=iris, aes(x = Petal.Length))  + geom_density(aes(fill=Species), colour = NA, alpha= .7) + theme_deutera("fill")
+```
+
+![](/img/deutera_density.png)
+
+
+```
+ggplot(data=iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) + geom_smooth(method="lm", size = 3, se = FALSE) + theme_deutera("colour")
+```
+
+![](/img/deutera_smooth.png)
+
+
+##### `theme_prota(colour_type)`
+
+Input: 
+
+`colour_type`: either "fill" or "colour" or "color" (both colour/color do the same thing)
+
+Output: A visualization with a  protanopia friendly colour palette and theme.
+
+examples: 
+
+```
+ggplot(data=iris, aes(x = Sepal.Length, y = Sepal.Width))  + geom_point(aes(color=Species), size =5) + theme_prota("colour")
+```
+
+![](/img/prota_point.png)
+
+
+```
+ggplot(data=iris, aes(x = Sepal.Width))  + geom_histogram(aes(fill=Species), bins =15) + theme_prota("fill")
+```
+
+![](/img/prota_hist.png)
+
+
+##### `theme_trita(colour_type)`
+
+Input: 
+
+`colour_type`: either "fill" or "colour" or "color" (both colour/color do the same thing)
+
+Output: A visualization with a tritanopia friendly colour palette and theme.
+
+examples: 
+
+```
+ggplot(data=iris, aes(x=Species, y=Sepal.Length)) + geom_boxplot(aes(fill=Species)) + theme_trita("fill")
+```
+
+![](/img/trita_box.png)
+
+
+```
+ggplot(data=iris, aes(x = Sepal.Width))  + geom_density(aes(colour=Species), size = 2.4 ) + theme_trita("colour")
+```
+
+![](/img/trita_density.png)
+
 
 
 ### Our Package in the R Ecosystem 
