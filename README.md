@@ -72,13 +72,22 @@ A visualization with a  deuteranopia friendly colour palette and theme.
 ggplot(data=iris, aes(x = Petal.Length))  + geom_density(aes(fill=Species), colour = NA, alpha= .7) + theme_deutera("fill")
 ```
 
-<img src="img/deutera_density.png" width="600">
+<p float="left">
+<img src="img/fill_density.png" width="400">
+<img src="img/deutera_density.png" width="400">
+</p>
 
+###### Plot before (left) and after adding theme_deutera("fill") (right) 
 ```
 ggplot(data=iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) + geom_smooth(method="lm", size = 3, se = FALSE) + theme_deutera("colour")
 ```
 
-<img src="img/deutera_smooth.png" width="600">
+<p float="left">
+<img src="img/smooth.png" width="400">
+<img src="img/deutera_smooth.png" width="400">
+</p>
+
+###### Plot before (left) and after adding theme_deutera("colour") (right) 
 
 
 ##### `theme_prota(colour_type)`
@@ -97,14 +106,24 @@ A visualization with a  protanopia friendly colour palette and theme.
 ggplot(data=iris, aes(x = Sepal.Length, y = Sepal.Width))  + geom_point(aes(color=Species), size =5) + theme_prota("colour")
 ```
 
+<p float="left">
+<img src="img/scatter.png" width="400" /> 
+<img src="img/prota_scatter.png" width="400">
+</p>
 
-<img src="img/prota_point.png" width="600">
+###### Plot before (left) and after adding theme_prota("colour") (right) 
 
 ```
 ggplot(data=iris, aes(x = Sepal.Width))  + geom_histogram(aes(fill=Species), bins =15) + theme_prota("fill")
 ```
 
-<img src="img/prota_hist.png" width="600">
+<p float="left">
+<img src="img/hist.png" width="400" /> 
+<img src="img/prota_hist.png" width="400">
+</p>
+
+###### Plot before (left) and after adding theme_prota("fill") (right)
+
 
 ##### `theme_trita(colour_type)`
 
@@ -122,13 +141,24 @@ A visualization with a tritanopia friendly colour palette and theme.
 ggplot(data=iris, aes(x=Species, y=Sepal.Length)) + geom_boxplot(aes(fill=Species)) + theme_trita("fill")
 ```
 
-<img src="img/trita_box.png" width="600">
+<p float="left">
+<img src="img/box.png" width="400" /> 
+<img src="img/trita_box.png" width="400">
+</p>
+
+###### Plot before (left) and after adding theme_trita("fill") (right)
+
 
 ```
 ggplot(data=iris, aes(x = Sepal.Width))  + geom_density(aes(colour=Species), size = 2.4 ) + theme_trita("colour")
 ```
 
-<img src="img/trita_density.png" width="600">
+<p float="left">
+<img src="img/colour_density.png" width="400" /> 
+<img src="img/trita_density.png" width="400">
+</p>
+
+###### Plot before (left) and after adding theme_trita("colour") (right)
 
 
 _Check out `vignette("ColourblindR")` for more information and a complete demonstration in Rstudio_
