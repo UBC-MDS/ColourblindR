@@ -169,7 +169,7 @@ As we are committed to support open source, we provide the complete [Colourblind
 
 **Branch Coverage Testing**
 
-In total, 28 paths were identified for our initial manual testing. We pass all 28 tests and a screenshot in the `img` file named [tests_results.png]("https://github.com/UBC-MDS/ColourblindR/blob/master/img/tests_results.png") is available for your convinience. 
+In total, 28 paths were identified for our initial manual testing. We pass all 28 tests and a screenshot in the `img` file named [tests_results.png](https://github.com/UBC-MDS/ColourblindR/blob/master/img/tests_results.png) is available for your convinience. 
 
 
 
