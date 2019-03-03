@@ -1,5 +1,5 @@
 ---
-title: "Introduction to ColourblindR"
+title: "ColourblindR"
 author: "Ian Flores,Hayley Boyce,Sabrina K.Tse"
 date: "`r Sys.Date()`"
 output:  rmarkdown::html_vignette
