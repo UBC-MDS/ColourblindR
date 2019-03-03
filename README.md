@@ -26,18 +26,25 @@ At this stage, `ColourblindR` will focus on developing settings for the three mo
   - This function implements a theme that makes plots accesible to people with protanopia. It modifies the colour of geometric objects (points, lines, etc) and the layout of the plot.
 - `theme_trita()`
   - This function implements a theme that makes plots accesible to people with tritanopia. It modifies the colour of geometric objects (points, lines, etc) and the layout of the plot.
-  
-  
+
+
 ### Installation
 
-To start using ColourblindR, the installation guidelines are as followed: 
+To start using ColourblindR, the installation guidelines are as followed:
 
 1. Ensure devtools is installed. If not, open the console and input the following: 
-```install.packages("devtools")``` to install devtools from CRAN.
+	```install.packages("devtools")``` to install devtools from CRAN.
 
-2. Install ColourblindR by inputting the following into the console:
-```devtools::install_github('ubc-mds/colourblindr')```
+2. Load `devtools`  by inputting the following in the console:
+```
+library(devtools)
+```
 
+3. Install `ColourblindR` package by inputting the following into the console:
+
+```
+devtools::install_github('ubc-mds/colourblindr')
+```
 
 
 ### Usage
@@ -124,7 +131,19 @@ ggplot(data=iris, aes(x = Sepal.Width))  + geom_density(aes(colour=Species), siz
 <img src="img/trita_density.png" width="600">
 
 
-### Our Package in the R Ecosystem 
+_Check out `vignette("ColourblindR")` for more information and a complete demonstration in Rstudio_
+
+### Control Flow Diagram
+
+As we are committed to support open source, we provide the complete [ColourblindR Control Flow Diagram](https://github.com/UBC-MDS/ColourblindR/blob/master/branch_coverage/colourblindr_con_flow_dia.png) for users who are interested in the backend workflow.
+
+**Branch Coverage Testing**
+
+In total, 28 paths were identified for our initial manual testing. See the screenshot below:
+
+![testing result]()
+
+### Our Package in the R Ecosystem
 
 `ColourblindR`, a package similar to the well known [`viridis`](https://www.rdocumentation.org/packages/viridis/versions/0.5.1) package takes a meaningful place in the R universe attempting to service the colourblind population. Unlike `viridis` which offers colour maps and palettes, `ColourblindR` will attempt to offer users a visually inclusive theme with geometric objects and layout. In addition to the `viridis` package there are ggplot packages called [colorblind_pal](https://www.rdocumentation.org/packages/ggthemes/versions/3.5.0/topics/colorblind_pal)  and [dichromat_pal](https://www.rdocumentation.org/packages/ggthemes/versions/3.5.0/topics/colorblind_pal) that offers an eight colour palette to accommodate all users.  `ColourblindR` hopes to give users not just different palettes, but a new theme (similar to how theme_bw or theme_classic contributes to ggplot) that will enhance the full data visualization, not just produce a palette. Lastly, ColourblindR will customise each graph specifically to each variant of colourblind conditions, a feature we have yet to see in the R ecosystem.
 
@@ -150,7 +169,7 @@ Deuteranopes are more likely to confuse:-
 
 Tritanopes
 
-The most common colour confusions for tritanopes are light blues with greys, dark purples with black, mid-greens with blues and oranges with reds. 
+The most common colour confusions for tritanopes are light blues with greys, dark purples with black, mid-greens with blues and oranges with reds.
 
 source:http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness/
 
