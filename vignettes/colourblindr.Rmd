@@ -1,0 +1,90 @@
+---
+title: "ColourblindR"
+author: "Ian Flores,Hayley Boyce,Sabrina K.Tse"
+date: "`r Sys.Date()`"
+output:  rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{ColourblindR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, echo=FALSE,include = FALSE,warning=FALSE}
+library(knitr)
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+  
+)
+```
+
+ColourblindR: colourblind-friendly themes for ggplot2
+====================================
+
+[ColourblindR](https://github.com/UBC-MDS/ColourblindR) is a brand new theme package implemented for ggplot2 to optimize graphs into a format interpretable by people with colourblindness. Colourblindness, also known as colour vision deficiency, is a condition that affects individuals how they perceive colours visually. According to colourblindawareness.org, colourblindness affects 1 in every 12 men and 1 in every 200 women globally. The package is inspired by the fact that people without knowledge about this condition don't know how to make their graphs accesible. Our objective is to enhance data visualization by implementing proper colours so that the graphs are perceived correctly by all readers as intended.
+
+As of March 3rd 2019,three themes are available in the `ColourblindR` package for the three most prevalent colourblind perspectives - protanopia, deuteranopes and tritanopes. 
+
+Each `ColourblindR` palette contains up to 9 colours to accomodate a variety of plot designs and requirements.
+
+
+`ColourblindR` functions
+---------------------------------
+Just like `theme_bw()` in the `ggplot2` package, the `ColourblindR` functions are to be used on top of `ggplot2` objects. The following theme functions modify the colour of geometric objects (points, lines, etc) and the layout of the plot:
+
+* `theme_deutera()`:This function implements a theme that makes plots accesible to people with deuteranopia. The colour palette contains shades of yellow,gray and blue.
+
+* `theme_prota()`:This function implements a theme that makes plots accesible to people with protanopia. The colour palette also contains shades of yellow,gray and blue, but more grayish, darker and colder than theme_deutera().
+
+* `theme_trita()`:This function implements a theme that makes plots accesible to people with  tritanopia. The colour palette contains shades of green,gray and pink.
+
+The above functions contain a **mandatory** conditional argument `colour_type`:
+
+* `"fill"`: to fill the ggplot geom objects with colours.
+* `"colour"` or `"color"`: to outline the ggplot geom objects with colours. It is recommended for any 1D plot object (i.e,`geom_smooth`,`geom_scatter`)
+
+
+Demostration
+------------------------
+We will use the `iris` dataset that comes  for demonstration
+
+```{r Packages required, warning=FALSE}
+library(ColourblindR)
+library(ggplot2)
+```
+
+```{r colourtype fill}
+#theme_deutera("fill")
+ggplot(data=iris, aes(x = Petal.Length))  + geom_density(aes(fill=Species), colour = NA, alpha= .7) +ggtitle("theme_deutera('fill')")+ theme_deutera("fill")
+
+```
+
+```{r colourtype fill2}
+#theme_prota("fill")
+ggplot(data=iris, aes(x = Petal.Length))  + geom_density(aes(fill=Species), colour = NA, alpha= .7) + ggtitle("theme_prota('fill')")+theme_prota("fill")
+
+```
+
+```{r colourtype fill3}
+#theme_trita("fill)
+ggplot(data=iris, aes(x = Petal.Length))  + geom_density(aes(fill=Species), colour = NA, alpha= .7) +ggtitle("theme_trita('fill')")+ theme_trita("fill")
+
+```
+
+```{r colourtype colour}
+
+#theme_trita("colour")
+ggplot(data=iris, aes(x = Sepal.Width))  + geom_density(aes(colour=Species), size = 2.4 ) + theme_trita("colour")+ggtitle("theme_trita('colour')")
+```
+
+```{r colourtype colour2}
+
+#theme_prota("colour")
+ggplot(data=iris, aes(x = Sepal.Length, y = Sepal.Width))  + geom_point(aes(color=Species), size =3) + theme_prota("colour")
+```
+
+``````{r colourtype colour3}
+#theme_deutera("colour")
+ggplot(data=iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) + geom_smooth(method="lm", size =2, se = FALSE) + theme_deutera("colour")
+```
+
