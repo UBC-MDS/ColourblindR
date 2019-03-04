@@ -17,14 +17,12 @@ theme_prota <- function(colour_type){
     #' @export
     #' @examples:
     #'
-    #' p <- ggplot(mpg, aes(x = hwy, y = cty, fill = as.factor(cyl))) +geom_bar(stat = 'identity')
-    #' cowplot::plot_grid(p, p + theme_prota(colour_type = 'fill'))
+    #' ggplot(mpg, aes(x = hwy, y = cty, fill = as.factor(cyl))) +geom_bar(stat = 'identity')  + theme_prota(colour_type = 'fill')
     #'
-    #' p <- ggplot(mpg, aes(x = hwy, y = cty, colour = as.factor(cyl))) + geom_point(stat = 'identity')
-    #' cowplot::plot_grid(p, p +  theme_prota(colour_type = 'colour'))
+    #' ggplot(mpg, aes(x = hwy, y = cty, colour = as.factor(cyl))) + geom_point(stat = 'identity') +  theme_prota(colour_type = 'colour')
+
     #'
-    #' ggplot(mpg, aes(hwy, colour = as.factor(cyl))) + geom_density()
-    #' cowplot::plot_grid(p, p +  theme_prota(colour_type = 'colour'))
+    #' ggplot(mpg, aes(hwy, colour = as.factor(cyl))) + geom_density() +  theme_prota(colour_type = 'colour')
     #'
     #' @return reformatted plot for protanopia vision
 
