@@ -1,10 +1,10 @@
 ---
-title: "Introduction to ColourblindR"
+title: "ColourblindR"
 author: "Ian Flores,Hayley Boyce,Sabrina K.Tse"
 date: "`r Sys.Date()`"
-output: rmarkdown::html_vignette
+output:  rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Introduction to ColourblindR}
+  %\VignetteIndexEntry{ColourblindR}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
