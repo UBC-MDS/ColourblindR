@@ -1,3 +1,7 @@
+require(testthat)
+require(ggplot2)
+
+
 base <- theme_base()
 
 test_that('theme_base() Text Parameters Tests', {

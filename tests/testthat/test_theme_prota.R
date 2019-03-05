@@ -1,3 +1,7 @@
+require(testthat)
+require(ggplot2)
+
+
 prota_colour <- theme_prota('colour')
 prota_fill <- theme_prota('fill')
 

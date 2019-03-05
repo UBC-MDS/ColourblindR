@@ -1,3 +1,7 @@
+require(testthat)
+require(ggplot2)
+
+
 deutera_colour <- theme_deutera('colour')
 deutera_fill <- theme_deutera('fill')
 
