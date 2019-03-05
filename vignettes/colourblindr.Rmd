@@ -2,11 +2,13 @@
 title: "ColourblindR"
 author: "Ian Flores,Hayley Boyce,Sabrina K.Tse"
 date: "`r Sys.Date()`"
-output:  rmarkdown::html_vignette
+output:  
+  html_document: rmarkdown::html_vignette
+  pdf_document: default
 vignette: >
-  %\VignetteIndexEntry{Introduction to ColourblindR}
-  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{ColourblindR}
   %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
 ---
 
 ```{r setup, echo=FALSE,include = FALSE,warning=FALSE}
