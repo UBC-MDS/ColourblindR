@@ -1,4 +1,11 @@
 language: r
-sudo: false
 cache: packages
-
+warnings_are_errors: false
+dist: trusty
+notifications:
+    on_success: never
+    on_failure: true
+r_packages:
+  - testthat
+  - ggplot2
+after_success:
