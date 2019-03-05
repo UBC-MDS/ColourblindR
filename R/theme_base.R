@@ -6,9 +6,9 @@
 
 theme_base <- function(colour_type){
 
-    #' @description: theme_base()
+    #' @description theme_base()
     #'
-    #' @details: Create your plot via ggplot2 and apply our theme to enhance plots to be more readable for colourblind viewers
+    #' @details Create your plot via ggplot2 and apply our theme to enhance plots to be more readable for colourblind viewers
 
    theme_bw() +
        theme(text = element_text(family = "sans", color = "black",

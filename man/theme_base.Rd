@@ -7,11 +7,11 @@
 theme_base(colour_type)
 }
 \description{
-: theme_base()
+theme_base()
 }
 \details{
 This function implements a base theme that makes plots more intepretable for viewers in general
 It modifies the layout of the plot.
 
-: Create your plot via ggplot2 and apply our theme to enhance plots to be more readable for colourblind viewers
+Create your plot via ggplot2 and apply our theme to enhance plots to be more readable for colourblind viewers
 }
