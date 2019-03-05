@@ -3,6 +3,8 @@
 
 # ColourblindR
 
+[![Build Status](https://travis-ci.org/UBC-MDS/ColourblindR.svg?branch=master)](https://travis-ci.org/UBC-MDS/ColourblindR)
+
 An R package that creates colourblind friendly themes.
 
 ### Authors
