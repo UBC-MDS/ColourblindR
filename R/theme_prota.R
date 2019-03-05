@@ -15,14 +15,13 @@ theme_prota <- function(colour_type){
     #'
     #' @details: Create your plot via ggplot2 and apply our theme to enhance plots to be more readable for colourblind viewers
     #' @export
-    #' @examples:
+    #' @examples
     #'
-    #' ggplot(mpg, aes(x = hwy, y = cty, fill = as.factor(cyl))) +geom_bar(stat = 'identity')  + theme_prota(colour_type = 'fill')
+    #' \dontrun{ggplot(mpg, aes(x = hwy, y = cty, fill = as.factor(cyl))) +geom_bar(stat = 'identity')  + theme_prota(colour_type = 'fill')}
     #'
-    #' ggplot(mpg, aes(x = hwy, y = cty, colour = as.factor(cyl))) + geom_point(stat = 'identity') +  theme_prota(colour_type = 'colour')
-
+    #' \dontrun{ggplot(mpg, aes(x = hwy, y = cty, colour = as.factor(cyl))) + geom_point(stat = 'identity') +  theme_prota(colour_type = 'colour')}
     #'
-    #' ggplot(mpg, aes(hwy, colour = as.factor(cyl))) + geom_density() +  theme_prota(colour_type = 'colour')
+    #' \dontrun{ggplot(mpg, aes(hwy, colour = as.factor(cyl))) + geom_density() +  theme_prota(colour_type = 'colour')}
     #'
     #' @return reformatted plot for protanopia vision
 
