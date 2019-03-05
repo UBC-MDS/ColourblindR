@@ -1,3 +1,7 @@
+require(testthat)
+require(ggplot2)
+
+
 trita_colour <- theme_trita('colour')
 trita_fill <- theme_trita('fill')
 
