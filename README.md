@@ -14,7 +14,7 @@ An R package that creates colourblind friendly themes.
 
 ### Project Summary  
 
-`ColourblindR` will be a brand new theme package implemented for `ggplot2` to optimize graphs into a format interpretable by people with colourblindness. Colourblindness, also known as colour vision deficiency, is a condition that affects individuals how they perceive colours visually. According to [colourblindawareness.org](http://www.colourblindawareness.org/colour-blindness/), colourblindness affects 1 in every 12 men and 1 in every 200 women globally. The package is inspired by the fact that people without knowledge about this condition don't know how to make their graphs accesible. Our objective is to enhance data visualization by implementing proper colours so that the graphs are perceived correctly by all readers as intended.
+`ColourblindR`, deployed in March 2019, is a brand new theme package implemented for `ggplot2` to optimize graphs into a format interpretable by people with colourblindness. Colourblindness, also known as colour vision deficiency, is a condition that affects individuals how they perceive colours visually. According to [colourblindawareness.org](http://www.colourblindawareness.org/colour-blindness/), colourblindness affects 1 in every 12 men and 1 in every 200 women globally. The package is inspired by the fact that people without knowledge about this condition don't know how to make their graphs accesible. Our objective is to enhance data visualization by implementing proper colours so that the graphs are perceived correctly by all readers as intended.
 
 **Scope**
 
@@ -79,7 +79,7 @@ ggplot(data=iris, aes(x = Petal.Length))  + geom_density(aes(fill=Species), colo
 <img src="img/deutera_density.png" width="400">
 </p>
 
-###### Plot before (left) and after adding theme_deutera("fill") (right) 
+###### Plot before (left) and after adding theme_deutera("fill") (right)
 ```
 ggplot(data=iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) + geom_smooth(method="lm", size = 3, se = FALSE) + theme_deutera("colour")
 ```
@@ -89,7 +89,7 @@ ggplot(data=iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) + geom_smoo
 <img src="img/deutera_smooth.png" width="400">
 </p>
 
-###### Plot before (left) and after adding theme_deutera("colour") (right) 
+###### Plot before (left) and after adding theme_deutera("colour") (right)
 
 
 ##### `theme_prota(colour_type)`
@@ -109,18 +109,18 @@ ggplot(data=iris, aes(x = Sepal.Length, y = Sepal.Width))  + geom_point(aes(colo
 ```
 
 <p float="left">
-<img src="img/scatter.png" width="400" /> 
+<img src="img/scatter.png" width="400" />
 <img src="img/prota_scatter.png" width="400">
 </p>
 
-###### Plot before (left) and after adding theme_prota("colour") (right) 
+###### Plot before (left) and after adding theme_prota("colour") (right)
 
 ```
 ggplot(data=iris, aes(x = Sepal.Width))  + geom_histogram(aes(fill=Species), bins =15) + theme_prota("fill")
 ```
 
 <p float="left">
-<img src="img/hist.png" width="400" /> 
+<img src="img/hist.png" width="400" />
 <img src="img/prota_hist.png" width="400">
 </p>
 
@@ -144,7 +144,7 @@ ggplot(data=iris, aes(x=Species, y=Sepal.Length)) + geom_boxplot(aes(fill=Specie
 ```
 
 <p float="left">
-<img src="img/box.png" width="400" /> 
+<img src="img/box.png" width="400" />
 <img src="img/trita_box.png" width="400">
 </p>
 
@@ -156,14 +156,14 @@ ggplot(data=iris, aes(x = Sepal.Width))  + geom_density(aes(colour=Species), siz
 ```
 
 <p float="left">
-<img src="img/colour_density.png" width="400" /> 
+<img src="img/colour_density.png" width="400" />
 <img src="img/trita_density.png" width="400">
 </p>
 
 ###### Plot before (left) and after adding theme_trita("colour") (right)
 
 
-_Check out `vignette("ColourblindR")` for more information and a complete demonstration in Rstudio_
+_Check out `vignette("colourblindr")` or click [here](https://github.com/UBC-MDS/ColourblindR/blob/master/vignettes/colourblindr.pdf) for more information and a complete demonstration in Rstudio_
 
 ### Control Flow Diagram
 
@@ -171,7 +171,7 @@ As we are committed to support open source, we provide the complete [Colourblind
 
 **Branch Coverage Testing**
 
-In total, 28 paths were identified for our initial manual testing. We pass all 28 tests and a screenshot in the `img` file named [tests_results.png](https://github.com/UBC-MDS/ColourblindR/blob/master/img/tests_results.png) is available for your convinience. 
+In total, 28 paths were identified for our initial manual testing. We pass all 28 tests and a screenshot in the `img` file named [tests_results.png](https://github.com/UBC-MDS/ColourblindR/blob/master/img/tests_results.png) is available for your convinience.
 
 
 
