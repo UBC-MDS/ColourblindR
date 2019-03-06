@@ -25,6 +25,18 @@ theme_deutera <- function(colour_type){
    #'
    #' @return reformatted plot for deuteranopia vision
 
+    tryCatch(colour_type,
+             error = function(e){
+                 message("An error occurred:\n", e)
+             },
+             warning = function(w){
+                 message("A warning occured:\n", w)
+             },
+             finally = {
+                 message("ColourblindR Applied")
+             })
+
+
    theme_set(theme_base())
 
    cb_palette <- c('#666E95', '#FFC13D', '#2F86E5',
