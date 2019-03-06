@@ -1,7 +1,7 @@
 Package: ColourblindR
 Type: Package 
 Title: Package That Creates Themes That Make Plots Accessible For People With Colour Blindness
-Version: 0.0.0.9000
+Version: 0.5.0
 Authors@R: 
     person(given = "Ian",
            family = "Flores Siaca",
