@@ -24,6 +24,19 @@ theme_prota <- function(colour_type){
     #' \dontrun{ggplot(mpg, aes(hwy, colour = as.factor(cyl))) + geom_density() +  theme_prota(colour_type = 'colour')}
     #'
     #' @return reformatted plot for protanopia vision
+    #'
+
+    tryCatch(colour_type,
+             error = function(e){
+                 message("An error occurred:\n", e)
+             },
+             warning = function(w){
+                 message("A warning occured:\n", w)
+             },
+             finally = {
+                 message("ColourblindR Applied")
+             })
+
 
    theme_set(theme_base())
 

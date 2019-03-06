@@ -25,7 +25,19 @@ theme_trita <-function(colour_type){
     #'
     #' @return reformatted plot for tritanopia vision
 
-   theme_set(theme_base())
+    tryCatch(colour_type,
+             error = function(e){
+                 message("An error occurred:\n", e)
+             },
+             warning = function(w){
+                 message("A warning occured:\n", w)
+             },
+             finally = {
+                 message("ColourblindR Applied")
+             })
+
+
+    theme_set(theme_base())
 
    cb_palette <- c('#5F727A', '#FFB7C2', '#01919A', '#A8A8B4', '#BDE6F4','#4A3F45', '#B77B87', '#00585C', '#932929')
 
