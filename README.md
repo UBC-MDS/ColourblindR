@@ -44,9 +44,9 @@ library(devtools)
 
 3. Install `ColourblindR` package by inputting the following into the console:
 
-```
-devtools::install_github('ubc-mds/colourblindr')
-```
+`
+devtools::install_github("ubc-mds/colourblindr", build_opts = c("--no-resave-data", "--no-manual"))
+`
 
 
 ### Usage
@@ -163,7 +163,13 @@ ggplot(data=iris, aes(x = Sepal.Width))  + geom_density(aes(colour=Species), siz
 ###### Plot before (left) and after adding theme_trita("colour") (right)
 
 
-_Check out `vignette("colourblindr")` or click [here](https://github.com/UBC-MDS/ColourblindR/blob/master/vignettes/colourblindr.pdf) for more information and a complete demonstration in Rstudio_
+_Check out the package vignette for more information and a complete demonstration in Rstudio_by entering the following:
+
+ - `vignette("colourblindr")` for viewing inside Rstuido viewer
+
+ or
+
+ - `browseVignettes(package="ColourblindR")` for viewing in a browser
 
 ### Control Flow Diagram
 
