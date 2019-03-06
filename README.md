@@ -23,19 +23,22 @@ At this stage, `ColourblindR` will focus on developing settings for the three mo
 ### Functions Included In This Package
 
 - `theme_deutera()`:
-  - This function implements a theme that makes plots accesible to people with deuteranopia. It modifies the colour of geometric objects (points, lines, etc) and the layout of the plot.
+  - This function implements a theme that makes plots accessible to people with deuteranopia. It modifies the colour of geometric objects (points, lines, etc) and the layout of the plot.
 - `theme_prota()`
-  - This function implements a theme that makes plots accesible to people with protanopia. It modifies the colour of geometric objects (points, lines, etc) and the layout of the plot.
+  - This function implements a theme that makes plots accessible to people with protanopia. It modifies the colour of geometric objects (points, lines, etc) and the layout of the plot.
 - `theme_trita()`
-  - This function implements a theme that makes plots accesible to people with tritanopia. It modifies the colour of geometric objects (points, lines, etc) and the layout of the plot.
+  - This function implements a theme that makes plots accessible to people with tritanopia. It modifies the colour of geometric objects (points, lines, etc) and the layout of the plot.
 
 
 ### Installation
 
 To start using ColourblindR, the installation guidelines are as followed:
 
-1. Ensure devtools is installed. If not, open the console and input the following:     
-	```install.packages("devtools")``` to install devtools from CRAN.
+1. Ensure devtools is installed. If not, open the console and input the following to install devtools from CRAN.:
+
+```
+install.packages("devtools")
+```
 
 2. Load `devtools`  by inputting the following in the console:
 ```
@@ -44,9 +47,9 @@ library(devtools)
 
 3. Install `ColourblindR` package by inputting the following into the console:
 
-`
+```
 devtools::install_github("ubc-mds/colourblindr", build_opts = c("--no-resave-data", "--no-manual"))
-`
+```
 
 
 ### Usage
@@ -165,7 +168,7 @@ ggplot(data=iris, aes(x = Sepal.Width))  + geom_density(aes(colour=Species), siz
 
 _Check out the package vignette for more information and a complete demonstration in Rstudio_by entering the following:
 
- - `vignette("colourblindr")` for viewing inside Rstuido viewer
+ - `vignette("colourblindr")` for viewing inside Rstudio viewer
 
  or
 
