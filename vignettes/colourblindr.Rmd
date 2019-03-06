@@ -1,16 +1,13 @@
 ---
-title: "ColourblindR"
+title: "colourblindr"
 author: "Ian Flores,Hayley Boyce,Sabrina K.Tse"
 date: "`r Sys.Date()`"
-output:  
-  html_document: rmarkdown::html_vignette
-  pdf_document: default
+output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{ColourblindR}
-  %\VignetteEncoding{UTF-8}
+  %\VignetteIndexEntry{colourblindr}
   %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 ---
-
 ```{r setup, echo=FALSE,include = FALSE,warning=FALSE}
 library(knitr)
 knitr::opts_chunk$set(
@@ -58,29 +55,24 @@ library(ggplot2)
 ```{r colourtype fill}
 #theme_deutera("fill")
 ggplot(data=iris, aes(x = Petal.Length))  + geom_density(aes(fill=Species), colour = NA, alpha= .7) +ggtitle("theme_deutera('fill')")+ theme_deutera("fill")
-
 ```
 
 ```{r colourtype fill2}
 #theme_prota("fill")
 ggplot(data=iris, aes(x = Petal.Length))  + geom_density(aes(fill=Species), colour = NA, alpha= .7) + ggtitle("theme_prota('fill')")+theme_prota("fill")
-
 ```
 
 ```{r colourtype fill3}
 #theme_trita("fill)
 ggplot(data=iris, aes(x = Petal.Length))  + geom_density(aes(fill=Species), colour = NA, alpha= .7) +ggtitle("theme_trita('fill')")+ theme_trita("fill")
-
 ```
 
 ```{r colourtype colour}
-
 #theme_trita("colour")
 ggplot(data=iris, aes(x = Sepal.Width))  + geom_density(aes(colour=Species), size = 2.4 ) + theme_trita("colour")+ggtitle("theme_trita('colour')")
 ```
 
 ```{r colourtype colour2}
-
 #theme_prota("colour")
 ggplot(data=iris, aes(x = Sepal.Length, y = Sepal.Width))  + geom_point(aes(color=Species), size =3) + theme_prota("colour")
 ```
@@ -89,4 +81,3 @@ ggplot(data=iris, aes(x = Sepal.Length, y = Sepal.Width))  + geom_point(aes(colo
 #theme_deutera("colour")
 ggplot(data=iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) + geom_smooth(method="lm", size =2, se = FALSE) + theme_deutera("colour")
 ```
-
