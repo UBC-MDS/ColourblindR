@@ -67,6 +67,11 @@ ggplot(data=iris, aes(x = Petal.Length))  + geom_density(aes(fill=Species), colo
 ggplot(data=iris, aes(x = Petal.Length))  + geom_density(aes(fill=Species), colour = NA, alpha= .7) +ggtitle("theme_trita('fill')")+ theme_trita("fill")
 ```
 
+```{r colourtype fill4}
+#theme_acroma('fill')
+ggplot(data=iris, aes(x=Species, y=Sepal.Length)) + geom_boxplot(aes(fill=Species)) + theme_acroma("fill")
+```
+
 ```{r colourtype colour}
 #theme_trita("colour")
 ggplot(data=iris, aes(x = Sepal.Width))  + geom_density(aes(colour=Species), size = 2.4 ) + theme_trita("colour")+ggtitle("theme_trita('colour')")
@@ -80,4 +85,8 @@ ggplot(data=iris, aes(x = Sepal.Length, y = Sepal.Width))  + geom_point(aes(colo
 ``````{r colourtype colour3}
 #theme_deutera("colour")
 ggplot(data=iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) + geom_smooth(method="lm", size =2, se = FALSE) + theme_deutera("colour")
+```
+
+```{r colourtype colour4}
+ggplot(data=iris, aes(x = Sepal.Width))  + geom_density(aes(colour=Species), size = 2.4 ) + theme_acroma("colour")
 ```
