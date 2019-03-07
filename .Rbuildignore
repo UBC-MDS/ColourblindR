@@ -1,3 +1,8 @@
+^img$
+^CONTRIBUTING\.md$
+^CODE_OF_CONDUCT\.md$
+^branch_coverage$
+^docs$
 ^Meta$
 ^doc$
 ^ColourblindR\.Rproj$
