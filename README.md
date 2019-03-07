@@ -23,12 +23,13 @@ At this stage, `ColourblindR` will focus on developing settings for the three mo
 ### Functions Included In This Package
 
 - `theme_deutera()`:
-  - This function implements a theme that makes plots accessible to people with deuteranopia. It modifies the colour of geometric objects (points, lines, etc) and the layout of the plot.
+    - This function implements a theme that makes plots accessible to people with deuteranopia. It modifies the colour of geometric objects (points, lines, etc) and the layout of the plot.
 - `theme_prota()`
-  - This function implements a theme that makes plots accessible to people with protanopia. It modifies the colour of geometric objects (points, lines, etc) and the layout of the plot.
+    - This function implements a theme that makes plots accessible to people with protanopia. It modifies the colour of geometric objects (points, lines, etc) and the layout of the plot.
 - `theme_trita()`
-  - This function implements a theme that makes plots accessible to people with tritanopia. It modifies the colour of geometric objects (points, lines, etc) and the layout of the plot.
-
+    - This function implements a theme that makes plots accessible to people with tritanopia. It modifies the colour of geometric objects (points, lines, etc) and the layout of the plot.
+- `theme_acroma()`
+    - This function implements a theme that makes plots accessible to people with acromatopsia. It modifies the colour of geometric objects (points, lines, etc) and the layout of the plot.
 
 ### Installation
 
@@ -165,6 +166,39 @@ ggplot(data=iris, aes(x = Sepal.Width))  + geom_density(aes(colour=Species), siz
 
 ###### Plot before (left) and after adding theme_trita("colour") (right)
 
+##### `theme_acroma(colour_type)`
+
+**Input:**
+
+`colour_type`: either "fill" or "colour" or "color" (both colour/color do the same thing)
+
+**Output:**
+
+A visualization with an acromatopsia friendly colour palette and theme.
+
+**Examples:**
+
+```
+ggplot(data=iris, aes(x=Species, y=Sepal.Length)) + geom_boxplot(aes(fill=Species)) + theme_acroma("fill")
+```
+
+<p float="left">
+<img src="img/box.png" width="400" />
+<img src="img/acroma_box.png" width="400">
+</p>
+
+###### Plot before (left) and after adding theme_acroma("fill") (right)
+
+```
+ggplot(data=iris, aes(x = Sepal.Width))  + geom_density(aes(colour=Species), size = 2.4 ) + theme_acroma("colour")
+```
+
+<p float="left">
+<img src="img/colour_density.png" width="400" />
+<img src="img/acroma_density.png" width="400">
+</p>
+
+###### Plot before (left) and after adding theme_acroma("colour") (right)
 
 _Check out the package vignette for more information and a complete demonstration in Rstudio_by entering the following:
 
@@ -181,8 +215,6 @@ As we are committed to support open source, we provide the complete [Colourblind
 **Branch Coverage Testing**
 
 In total, 28 paths were identified for our initial manual testing. We pass all 28 tests and a screenshot in the `img` file named [tests_results.png](https://github.com/UBC-MDS/ColourblindR/blob/master/img/tests_results.png) is available for your convinience.
-
-
 
 ### Our Package in the R Ecosystem
 
