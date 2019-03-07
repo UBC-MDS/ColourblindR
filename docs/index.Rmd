@@ -4,6 +4,8 @@ date: "March 6, 2019"
 output:
     rmarkdown::html_document:
       theme: yeti
+      includes:
+          in_header: "favicon.html"
 ---
 
 <img src="img/CBRnew.png" width="200" align='right'>
